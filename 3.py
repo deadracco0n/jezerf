@@ -22,7 +22,7 @@ def calcular_faturamento(faturamento_diario):
     
     return menor_faturamento, maior_faturamento, dias_acima_da_media
 
-with open('faturamento.json', 'r') as file:
+with open('dados.json', 'r') as file:
     faturamento_diario = json.load(file)
 
 menor, maior, dias_acima_media = calcular_faturamento(faturamento_diario)
